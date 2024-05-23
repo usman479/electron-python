@@ -1,0 +1,12 @@
+"start": "react-scripts start",
+
+
+
+
+
+
+
+"start": "concurrently 'npm run react-start' 'wait-on http://localhost:3000/ && npm run electron-start'",
+
+
+"electron.js is the only piece of code that has access to the instance of ipcMain and as you know an app can have no more than one ipcMain instance."
