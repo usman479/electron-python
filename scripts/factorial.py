@@ -8,4 +8,4 @@ def factorial(x):
 	else:
 		return x * factorial(x-1)
 
-print(factorial( int(data) ))
+print(factorial( int(data)))

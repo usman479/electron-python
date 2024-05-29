@@ -10,3 +10,51 @@
 
 
 "electron.js is the only piece of code that has access to the instance of ipcMain and as you know an app can have no more than one ipcMain instance."
+
+
+"build": {
+    "appId": "Factorial Calculator",
+    "productName": "F-Cal",
+    "copyright": "Copyright © 2019-2020 Mr. Mallik",
+    "asar": false,
+    "linux": {
+      "target": [
+        "deb",
+        "snap"
+      ],
+      "category": "Utility"
+    },
+    "snap": {
+      "confinement": "classic"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "legalTrademarks": "Copyright © 2019-2020 Mr. Mallik",
+      "signingHashAlgorithms": [
+        "sha1",
+        "sha256"
+      ]
+    },
+    "nsis": {
+      "oneClick": true
+    },
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        "default"
+      ]
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "utils/**/*",
+      "scripts/**/*",
+      "background_tasks/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extends": null
+  }
